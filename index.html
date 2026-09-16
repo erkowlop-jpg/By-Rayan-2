@@ -3,130 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة التثبت الرقمي - مكافحة الشائعات</title>
-    <!-- Tailwind CSS -->
+    <title>الوعي الرقمي: حمايتك وبصمتك في العالم الرقمي</title>
+    <!-- Tailwind CSS 4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome الأيقونات -->
+    <!-- FontAwesome الأيقونات الاحترافية -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS مكتبة الحركات التفاعلية -->
+    <!-- AOS مكتبة الحركات السلسة -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
         body { font-family: 'Cairo', sans-serif; }
-        .glass-card {
-            background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(12px);
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(99, 102, 241, 0.15);
         }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
 
-    <!-- رأس الصفحة -->
-    <header class="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 py-4 sticky top-0 z-50 shadow-md">
+    <!-- رأس الصفحة التفاعلي -->
+    <header class="bg-slate-900/85 backdrop-blur-md border-b border-slate-800 py-4 sticky top-0 z-50 shadow-xl">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center space-x-3 space-x-reverse" data-aos="fade-down">
-                <div class="bg-indigo-600 p-2.5 rounded-xl text-white shadow-lg shadow-indigo-600/30">
-                    <i class="fa-solid fa-shield-halved text-xl"></i>
+                <div class="bg-gradient-to-tr from-indigo-600 to-violet-500 p-2.5 rounded-2xl text-white shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-fingerprint text-xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-lg text-white">منصة الوعي الرقمي</h1>
-                    <p class="text-xs text-slate-400">مدرسة الأنصار المتوسطة</p>
+                    <h1 class="font-black text-base md:text-lg text-white tracking-wide">الوعي الرقمي والآمان</h1>
+                    <p class="text-xs text-indigo-400 font-semibold">مدرسة الأنصار المتوسطة</p>
                 </div>
             </div>
-            <div class="text-xs bg-slate-800/80 text-indigo-300 px-3 py-1.5 rounded-full border border-slate-700 font-medium" data-aos="fade-down">
+            <div class="text-xs bg-slate-800/90 text-indigo-300 px-3.5 py-1.5 rounded-full border border-slate-700 font-medium shadow-inner" data-aos="fade-down">
                 إعداد الطالبين: ريان سعيد & أحمد القدسي
             </div>
         </div>
     </header>
 
-    <!-- المحتوى الرئيسي -->
-    <main class="container mx-auto px-4 py-8 max-w-3xl flex-grow">
-        <div class="text-center mb-8" data-aos="fade-up">
-            <h2 class="text-2xl md:text-3xl font-black mb-3 text-white">درع الوطن ضد الشائعات والأخبار المضللة</h2>
-            <p class="text-slate-400 text-sm md:text-base">أدخل نص الخبر أو الرسالة التي وصلتك للتحقق منها ومعرفة أثرها على الأمن الوطني والسلام الاجتماعي.</p>
+    <!-- الهيرو (الواجهة الرئيسية للمشروع) -->
+    <section class="container mx-auto px-4 pt-12 pb-6 max-w-4xl text-center">
+        <div data-aos="zoom-in">
+            <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs px-4 py-1.5 rounded-full font-bold uppercase tracking-wider inline-block mb-4">
+                <i class="fa-solid fa-shield-cat ml-1"></i> بوابتك الآمنة نحو عالم رقمي ذكي
+            </span>
+            <h2 class="text-3xl md:text-5xl font-black mb-4 text-white leading-tight">
+                الوعي الرقمي: <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">حمايتك وبصمتك</span> في العالم الرقمي
+            </h2>
+            <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                مشروع متكامل لاستكشاف أسرار الأمن الرقمي، حماية الخصوصية، محاربة الشائعات، والتنقل الذكي والآمن في فضاء الإنترنت الواسع.
+            </p>
         </div>
+    </section>
 
-        <!-- صندوق الإدخال -->
-        <div class="glass-card rounded-2xl p-5 shadow-xl mb-6" data-aos="fade-up" data-aos-delay="100">
-            <label for="newsInput" class="block text-sm font-semibold mb-2 text-indigo-300">
-                <i class="fa-regular fa-pen-to-square ml-1"></i> الصق نص الخبر أو الشائعة هنا:
-            </label>
-            <textarea id="newsInput" rows="4" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl p-3 text-slate-200 focus:outline-none focus:border-indigo-500 transition resize-none text-sm shadow-inner" placeholder="مثال: خبر عاجل عن قرار غير رسمي أو شائعة متداولة..."></textarea>
-            
-            <div class="mt-4 flex justify-end">
-                <button onclick="analyzeNews()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-2.5 rounded-xl transition shadow-lg shadow-indigo-600/30 flex items-center gap-2 cursor-pointer text-sm">
-                    <i class="fa-solid fa-magnifying-glass"></i> فحص وتحليل النص
-                </button>
+    <!-- المحتوى الرئيسي للمحاور الأربعة -->
+    <main class="container mx-auto px-4 py-6 max-w-4xl flex-grow space-y-8">
+
+        <!-- المحور الأول: ما هو الوعي الرقمي؟ -->
+        <div class="glass-panel rounded-3xl p-6 md:p-8 glow-effect" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-indigo-600/20 text-indigo-400 p-3 rounded-2xl border border-indigo-500/30">
+                    <i class="fa-solid fa-brain text-xl"></i>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-white">المحور الأول: ما هو الوعي الرقمي ولماذا نحتاجه؟</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+                    <h4 class="font-bold text-indigo-300 mb-2"><i class="fa-solid fa-bullseye ml-1"></i> التعريف المبسط:</h4>
+                    <p class="text-slate-300 leading-relaxed">هو القدرة المتقدمة على استخدام التقنية وأجهزة الاتصال بأمان، وعي، ومسؤولية كاملة تضمن الاستفادة القصوى دون أضرار.</p>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+                    <h4 class="font-bold text-cyan-300 mb-2"><i class="fa-solid fa-shield-halved ml-1"></i> الأهمية والأمان:</h4>
+                    <p class="text-slate-300 leading-relaxed">كيف تحمي نفسك من الوقوع في فخاخ الإنترنت المظلمة وتحافظ على سمعتك الرقمية نظيفة ومشرقة طوال مسيرتك.</p>
+                </div>
             </div>
         </div>
 
-        <!-- صندوق النتائج (مخفي بالبداية) -->
-        <div id="resultContainer" class="hidden space-y-4">
-            <div class="bg-rose-950/40 border border-rose-800/60 rounded-2xl p-4 flex items-start gap-3 shadow-lg" data-aos="zoom-in">
-                <div class="bg-rose-600 text-white p-2 rounded-xl mt-0.5">
-                    <i class="fa-solid fa-triangle-exclamation text-lg"></i>
+        <!-- المحور الثاني: البصمة الرقمية -->
+        <div class="glass-panel rounded-3xl p-6 md:p-8 glow-effect" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-amber-600/20 text-amber-400 p-3 rounded-2xl border border-amber-500/30">
+                    <i class="fa-solid fa-shoe-prints text-xl"></i>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-white">المحور الثاني: البصمة الرقمية (ما تتركه خلفك)</h3>
+            </div>
+            <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800 text-sm space-y-3">
+                <p class="text-slate-300 leading-relaxed">
+                    كل ما تنشره، تعلق عليه، تشاركه، أو تبحث عنه على شبكات التواصل يبقى مسجلاً للأبد ولا يُمحى بسهولة، ويشكل هويتك الرقمية أمام المدارس والجامعات وجهات العمل مستقبلاً.
+                </p>
+                <div class="bg-amber-950/30 border border-amber-800/40 p-3.5 rounded-xl text-amber-300 font-semibold flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-base"></i>
+                    <span>نصيحة ذهبية للطلاب: "فكر بعمق قبل أن تنشر أو تتفاعل.. الكلمة إما أن ترفعك أو تُسقطك."</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- المحور الثالث: المخاطر الرقمية (روابط، ابتزاز، تنمر، شائعات) -->
+        <div class="glass-panel rounded-3xl p-6 md:p-8 glow-effect" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-rose-600/20 text-rose-400 p-3 rounded-2xl border border-rose-500/30">
+                    <i class="fa-solid fa-triangle-exclamation text-xl"></i>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-white">المحور الثالث: المخاطر الرقمية وكيف تتجنبها</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs md:text-sm">
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+                    <h4 class="font-bold text-rose-400 mb-2"><i class="fa-solid fa-link-slash ml-1"></i> الروابط الوهمية:</h4>
+                    <p class="text-slate-300 leading-relaxed">احذر الروابط المجهولة التي تعدك بجوائز وهمية؛ هدفها الأساسي سرقة الحسابات واختراق الخصوصية.</p>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+                    <h4 class="font-bold text-amber-400 mb-2"><i class="fa-solid fa-user-shield ml-1"></i> الابتزاز الإلكتروني:</h4>
+                    <p class="text-slate-300 leading-relaxed">لو تعرضت لموقف مريب، لا تستسلم أبداً! أبلغ الوالدين فوراً أو توجه للجهات الرسمية عبر تطبيق <strong>"كلنا أمن"</strong>.</p>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+                    <h4 class="font-bold text-cyan-400 mb-2"><i class="fa-solid fa-comments ml-1"></i> التنمر الإلكتروني:</h4>
+                    <p class="text-slate-300 leading-relaxed">تعامل معه بذكاء: استخدم زر الحظر، التبليغ عن المسيء، ولا تقم أبداً بالرد عليه لقطع الطريق أمامه.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- المحور الرابع: الاستخدام الإيجابي والذكي (الذكاء الاصطناعي) -->
+        <div class="glass-panel rounded-3xl p-6 md:p-8 glow-effect" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-emerald-600/20 text-emerald-400 p-3 rounded-2xl border border-emerald-500/30">
+                    <i class="fa-solid fa-robot text-xl"></i>
+                </div>
+                <h3 class="text-lg md:text-xl font-bold text-white">المحور الرابع: الاستخدام الإيجابي والذكي للتقنية</h3>
+            </div>
+            <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800 text-sm space-y-3">
+                <p class="text-slate-300 leading-relaxed">
+                    تحول بذكاء من <span class="text-rose-400 font-semibold">مستهلك سلبي</span> يقضي الساعات في التصفح الضار إلى <span class="text-emerald-400 font-semibold">مستفيد منتج ومبدع</span>. استغل أدوات الذكاء الاصطناعي الحديثة في تطوير مهاراتك الدراسية، برمجة التطبيقات، والتعلم الذاتي الإيجابي.
+                </p>
+            </div>
+        </div>
+
+        <!-- أداة فحص الشائعات التفاعلية (إضافة المشروع السابق) -->
+        <div class="glass-panel rounded-3xl p-6 md:p-8 border border-indigo-500/30 glow-effect" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="bg-indigo-600 text-white p-3 rounded-2xl shadow-lg">
+                    <i class="fa-solid fa-magnifying-glass-chart text-xl"></i>
                 </div>
                 <div>
-                    <h3 class="font-bold text-rose-400 text-base">تحذير: خبر مشبوه / شائعة محتملة</h3>
-                    <p class="text-slate-300 text-xs md:text-sm mt-1">هذا النص يحمل مؤشرات أخبار مضللة تهدف لإثارة البلبلة دون استناد لمصادر رسمية معتمدة.</p>
+                    <h3 class="text-base md:text-lg font-bold text-white">محاكي الفحص الرقمي (كشف الشائعات والأخبار المضللة)</h3>
+                    <p class="text-xs text-slate-400">اختبر أي نص أو خبر قبل تداوله لمعرفة أثره على الأمن والوعي الاجتماعي.</p>
                 </div>
             </div>
-
-            <div class="glass-card rounded-2xl p-5 shadow-xl" data-aos="fade-up">
-                <h4 class="font-bold text-indigo-400 text-sm mb-2 flex items-center gap-2">
-                    <i class="fa-solid fa-book-quran"></i> التوجيه القرآني (التثبت):
-                </h4>
-                <p class="text-slate-200 text-sm leading-relaxed bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 italic">
-                    قال الله تعالى: <span class="text-amber-300 font-semibold">(يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ)</span> [الحجرات: 6].
-                </p>
+            
+            <textarea id="newsInput" rows="3" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-2xl p-4 text-slate-200 focus:outline-none focus:border-indigo-500 transition resize-none text-sm shadow-inner mb-4" placeholder="الصق نص الخبر أو الشائعة هنا لفحصها..."></textarea>
+            
+            <div class="flex justify-end">
+                <button onclick="analyzeNews()" class="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold px-6 py-2.5 rounded-xl transition shadow-lg shadow-indigo-600/30 flex items-center gap-2 cursor-pointer text-sm">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> تحليل بذكاء النظام
+                </button>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="glass-card rounded-2xl p-4 shadow-xl" data-aos="fade-right">
-                    <h4 class="font-bold text-amber-400 text-xs mb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-landmark"></i> الأثر على الأمن الوطني:
-                    </h4>
-                    <p class="text-slate-300 text-xs leading-relaxed">
-                        تستهدف الشائعات زعزعة الاستقرار، إضعاف الثقة في المؤسسات الرسمية، وإشغال الدولة بأزمات وهمية تبطئ مسيرة التنمية.
-                    </p>
+            <!-- النتيجة المخفية -->
+            <div id="resultContainer" class="hidden mt-6 space-y-4 pt-4 border-t border-slate-800">
+                <div class="bg-rose-950/40 border border-rose-800/60 rounded-2xl p-4 flex items-start gap-3">
+                    <div class="bg-rose-600 text-white p-2 rounded-xl mt-0.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-rose-400 text-sm">تحذير أمني: محتوى مشبوه أو شائعة محتملة</h4>
+                        <p class="text-slate-300 text-xs mt-1">هذا النص يحمل مؤشرات أخبار غير موثقة تهدف لزعزعة الأمن الوطني والسلام الاجتماعي.</p>
+                    </div>
                 </div>
-                <div class="glass-card rounded-2xl p-4 shadow-xl" data-aos="fade-left">
-                    <h4 class="font-bold text-cyan-400 text-xs mb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-people-group"></i> الأثر على السلام الاجتماعي:
-                    </h4>
-                    <p class="text-slate-300 text-xs leading-relaxed">
-                        تخلق حالة من الهلع والفزع بين أفراد المجتمع، وتفتت النسيج المجتمعي، وتضر بسمعة وحقوق الأفراد الأبرياء.
-                    </p>
+
+                <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 text-xs md:text-sm">
+                    <h5 class="font-bold text-amber-300 mb-1"><i class="fa-solid fa-book-quran ml-1"></i> التوجيه القرآني:</h5>
+                    <p class="text-slate-200 italic">قال الله تعالى: <span class="text-amber-200 font-semibold">(يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا...)</span> [الحجرات: 6].</p>
                 </div>
-            </div>
-
-            <div class="glass-card rounded-2xl p-4 shadow-xl" data-aos="fade-up">
-                <h4 class="font-bold text-rose-400 text-xs mb-2 flex items-center gap-2">
-                    <i class="fa-solid fa-gavel"></i> المسؤولية القانونية:
-                </h4>
-                <p class="text-slate-300 text-xs leading-relaxed">
-                    إنتاج وتداول الشائعات والأخبار الكاذبة التي تمس النظام العام أو القلق المجتمعي يعرض مرتكبها لعقوبات صارمة ورادعة وفقاً لنظام مكافحة جرائم المعلوماتية.
-                </p>
-            </div>
-
-            <div class="bg-emerald-950/40 border border-emerald-800/60 rounded-2xl p-4 text-center shadow-lg" data-aos="zoom-in">
-                <p class="text-emerald-300 text-xs font-semibold">
-                    <i class="fa-solid fa-circle-check ml-1"></i> تذكر دائماً: "قِف عند الحد، ولا تكن جسراً لنشر الشائعات. اعتمد حصرياً على المصادر الرسمية."
-                </p>
             </div>
         </div>
+
     </main>
 
     <!-- تذييل الصفحة -->
-    <footer class="bg-slate-900/80 border-t border-slate-800 py-4 text-center text-xs text-slate-400">
+    <footer class="bg-slate-900/85 border-t border-slate-800 py-4 text-center text-xs text-slate-400 mt-12">
         <p>جميع الحقوق محفوظة © مشروع مدرسة الأنصار المتوسطة | إعداد الطالبين: ريان سعيد & أحمد القدسي</p>
     </footer>
 
-    <!-- سكربت الحركات (AOS JS) -->
+    <!-- سكربت الحركات التفاعلية -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // تفعيل مكتبة الحركات
         AOS.init({
             duration: 800,
             once: true
@@ -136,12 +197,10 @@
             const inputVal = document.getElementById('newsInput').value.trim();
             const resultBox = document.getElementById('resultContainer');
             if(inputVal === "") {
-                alert("الرجاء إدخال نص الخبر أولاً لكي يتم فحصه!");
+                alert("الرجاء إدخال نص الخبر أو الشائعة أولاً!");
                 return;
             }
             resultBox.classList.remove('hidden');
-            // إعادة تشغيل الحركات عند ظهور النتائج
-            AOS.refresh();
             resultBox.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
